@@ -5,8 +5,8 @@ def add(a, b):
 
 class TestApp(unittest.TestCase):
     def test_add(self):
-        self.assertEqual(add(10, 20), 30)
+        self.assertEqual(add(10, 40), 30)
 
 if __name__ == "__main__":
     print("Python Application Running")
-    print("Sum =", add(10, 20))
+    print("Sum =", add(10, 40))

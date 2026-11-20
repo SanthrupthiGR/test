@@ -1,5 +1,12 @@
-a = 20
-b = 30
-sum = a + b
+import unittest
 
-print("Sum =", sum)
+def add(a, b):
+    return a + b
+
+class TestApp(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(10, 20), 30)
+
+if __name__ == "__main__":
+    print("Python Application Running")
+    print("Sum =", add(10, 20))
